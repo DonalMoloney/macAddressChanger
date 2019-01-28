@@ -1,10 +1,11 @@
 # A simple project that changes the mac address of your computer
+# Created by Donal Moloney on January 7 2019
 #!/usr/bin/env python
 
 import subprocess
 
-interface = "wlan0"
-new_mac = "00:11:22:33:44:77"
+interface = input("Enter an interface to change for example: wlan0\n")
+new_mac = input("Enter a new MAC address example: 00:11:22:33:44:77\n")
 
 print("[+] Changing MAC address for " + interface + " to " + new_mac)
 
