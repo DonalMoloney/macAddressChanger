@@ -4,6 +4,12 @@
 #!/usr/bin/env python
 
 import subprocess
+import optparse
+
+parser = optparse.OptionParser()
+parser.add_option("-i", "--interface",dest="interface", help="Interface to change its MAC address")
+
+parser.parse_args()
 
 interface = input("Enter an interface to change for example: wlan0\n")
 new_mac = input("Enter a new MAC address example: 00:11:22:33:44:77\n")
